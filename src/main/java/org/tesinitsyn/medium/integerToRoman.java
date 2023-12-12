@@ -1,5 +1,8 @@
 package org.tesinitsyn.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Converts an integer to a Roman numeral.
  * <p>
@@ -29,17 +32,29 @@ package org.tesinitsyn.medium;
  */
 
 public class integerToRoman {
-    public static void main(String[] args) {
-        System.out.println(integerToRoman.intToRoman(3));
-        System.out.println(integerToRoman.intToRoman(58));
-        System.out.println(integerToRoman.intToRoman(1994));
-    }
+
+    private static final Map<String, Integer> romanMap = new HashMap<>();
 
     /**
      * @param num The integer to be converted.
      * @return The Roman numeral representation of the given integer.
      */
     public static String intToRoman(int num) {
-        return null;
+        String result = "";
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        romanMap.put("I", 1);
+        romanMap.put("V", 5);
+        romanMap.put("X", 10);
+        romanMap.put("L", 50);
+        romanMap.put("C", 100);
+        romanMap.put("D", 500);
+        romanMap.put("M", 1000);
+        System.out.println(integerToRoman.intToRoman(3));
+        System.out.println(integerToRoman.intToRoman(58));
+        System.out.println(integerToRoman.intToRoman(1994));
     }
 }
